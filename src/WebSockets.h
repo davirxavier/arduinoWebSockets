@@ -455,6 +455,8 @@ class WebSockets {
 
     void enableHeartbeat(WSclient_t * client, uint32_t pingInterval, uint32_t pongTimeout, uint8_t disconnectTimeoutCount);
     void handleHBTimeout(WSclient_t * client);
+
+    size_t maxDataSize = WEBSOCKETS_MAX_DATA_SIZE;
 };
 
 #ifndef UNUSED

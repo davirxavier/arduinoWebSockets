@@ -114,6 +114,8 @@ class WebSocketsClient : protected WebSockets {
     bool isConnected(void);
     String getUrl(void);
 
+    void setMaxDataSize(size_t maxDataSize);
+
   protected:
     String _host;
     uint16_t _port;

@@ -100,6 +100,8 @@ class WebSocketsServerCore : protected WebSockets {
 
     WSclient_t * newClient(WEBSOCKETS_NETWORK_CLASS * TCPclient);
 
+    void setMaxDataSize(size_t maxDataSize);
+
   protected:
     String _origin;
     String _protocol;

@@ -1053,3 +1053,11 @@ void WebSocketsClient::enableHeartbeat(uint32_t pingInterval, uint32_t pongTimeo
 void WebSocketsClient::disableHeartbeat() {
     _client.pingInterval = 0;
 }
+
+/**
+ * set the max size for data
+ * @param maxDataSize max size in bytes
+ */
+void WebSocketsClient::setMaxDataSize(size_t maxDataSize) {
+    this->maxDataSize = maxDataSize;
+}

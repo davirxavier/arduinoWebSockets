@@ -940,6 +940,14 @@ void WebSocketsServerCore::disableHeartbeat() {
     }
 }
 
+/**
+ * set the max size for data
+ * @param maxDataSize max size in bytes
+ */
+void WebSocketsServerCore::setMaxDataSize(size_t maxDataSize) {
+    this->maxDataSize = maxDataSize;
+}
+
 ////////////////////
 // WebSocketServer
 
